@@ -24,7 +24,11 @@ module.exports = {
 			colors: {
 				primary: "#4880FF",
 				success: "#00B69B",
+				warning: "#FEC53D",
+				error: "#FF0000",
 				backgroundPrimary: "#F5F6FA",
+				borderPrimary: "#D5D5D5",
+				purple: "#6226EF",
 			},
 			fontFamily: {
 				sans: ["Nunito Sans", "sans-serif"],

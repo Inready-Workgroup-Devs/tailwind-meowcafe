@@ -26,30 +26,28 @@
 						</p>
 						<section class="mt-8 flex flex-col">
 							<div class="relative px-6">
-								<a href="./dashboard.html">
-									<button
-										class="p-3 group data-active:bg-primary items-center flex w-full rounded-md data-active:text-white"
-									>
-										<div
-											class="bg-primary absolute rounded-e-lg top-0 left-0 h-full w-1 hidden group-data-active:block"
-										></div>
-										<i class="ri-dashboard-line mr-4 text-lg"></i>
-										<span class="font-semibold">Dashboard</span>
-									</button>
+								<a
+									href="./dashboard.html"
+									class="p-3 group data-active:bg-primary items-center flex w-full rounded-md data-active:text-white"
+								>
+									<div
+										class="bg-primary absolute rounded-e-lg top-0 left-0 h-full w-1 hidden group-data-active:block"
+									></div>
+									<i class="ri-dashboard-line mr-4 text-lg"></i>
+									<span class="font-semibold">Dashboard</span>
 								</a>
 							</div>
 							<div class="relative px-6">
-								<a href="./products.html">
-									<button
-										class="p-3 group data-active:bg-primary items-center flex w-full rounded-md data-active:text-white"
-										data-page="active"
-									>
-										<div
-											class="bg-primary absolute rounded-e-lg top-0 left-0 h-full w-1 hidden group-data-active:block"
-										></div>
-										<i class="ri-microsoft-line mr-4 text-lg"></i>
-										<span class="font-semibold">Products</span>
-									</button>
+								<a
+									href="./products.html"
+									class="p-3 group data-active:bg-primary items-center flex w-full rounded-md data-active:text-white"
+									data-page="active"
+								>
+									<div
+										class="bg-primary absolute rounded-e-lg top-0 left-0 h-full w-1 hidden group-data-active:block"
+									></div>
+									<i class="ri-microsoft-line mr-4 text-lg"></i>
+									<span class="font-semibold">Products</span>
 								</a>
 							</div>
 						</section>
@@ -62,16 +60,15 @@
 								>
 							</div>
 							<div class="relative px-6">
-								<a href="./orders.html">
-									<button
-										class="p-3 group data-active:bg-primary items-center flex w-full rounded-md data-active:text-white"
-									>
-										<div
-											class="bg-primary absolute rounded-e-lg top-0 left-0 h-full w-1 hidden group-data-active:block"
-										></div>
-										<i class="ri-clipboard-line mr-4 text-lg"></i>
-										<span class="font-semibold">Orders</span>
-									</button>
+								<a
+									href="./orders.html"
+									class="p-3 group data-active:bg-primary items-center flex w-full rounded-md data-active:text-white"
+								>
+									<div
+										class="bg-primary absolute rounded-e-lg top-0 left-0 h-full w-1 hidden group-data-active:block"
+									></div>
+									<i class="ri-clipboard-line mr-4 text-lg"></i>
+									<span class="font-semibold">Orders</span>
 								</a>
 							</div>
 						</section>
@@ -93,7 +90,7 @@
 						name=""
 						id=""
 						placeholder="Search"
-						class="px-4 w-96 h-full py-2 bg-[#F5F6FA] rounded-3xl border border-[#D5D5D5]"
+						class="px-4 w-96 h-full py-2 bg-backgroundPrimary rounded-3xl border border-borderPrimary"
 					/>
 					<div class="flex gap-5 items-center h-full">
 						<div
@@ -111,48 +108,174 @@
 						</div>
 					</div>
 				</nav>
-				<main class="p-7 bg-backgroundPrimary h-content mt-[70px]">
-					<p class="text-3xl font-bold">Products</p>
-					<div class="mt-7 border border-[#D5D5D5] rounded-md bg-white">
-						<table class="w-full table-fixed">
-							<thead class="text-left">
-								<tr class="border-b border-[#D5D5D5]">
-									<th class="w-2/12 text-center py-4">Image</th>
-									<th class="w-3/12">Product Name</th>
-									<th class="w-3/12">Category</th>
-									<th class="w-3/12">Price</th>
-									<th class="w-3/12">Stock</th>
-									<th class="w-2/12">Action</th>
-								</tr>
-							</thead>
-							<tbody class="table-row-group font-semibold">
-								<tr class="border-b-[#D5D5D5] border-b">
-									<td class="py-6 flex justify-center">
-										<img src="../assets/friedrice.png" alt="" />
-									</td>
-									<td>Fried Rice</td>
-									<td>Food</td>
-									<td>Rp25.000</td>
-									<td>10</td>
-									<td class="h-full">
-										<div
-											class="inline-flex rounded-lg bg-[#FAFBFD] border border-[#D5D5D5]"
-										>
-											<button class="py-2 px-4 text-black">
-												<i class="ri-edit-box-line"></i>
-											</button>
-											<div class="w-[1px] bg-[#D5D5D5] h-10"></div>
-											<button class="py-2 px-4 text-red-500">
-												<i class="ri-delete-bin-line"></i>
-											</button>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+				<main class="p-7 bg-backgroundPrimary h-content mt-[70px] w-full">
+					<div class="flex justify-between items-center">
+						<p class="text-3xl font-bold">Edit Products</p>
+						<div class="flex gap-2">
+							<button
+								type="submit"
+								form="form"
+								class="bg-primary text-white font-bold h-full text-base w-36 inline-flex py-3 rounded-md justify-center"
+							>
+								<p class="-mb-[2px]">Add</p>
+							</button>
+							<a
+								href=""
+								class="bg-red-500 text-white font-bold h-full text-base w-36 inline-flex py-3 rounded-md justify-center"
+							>
+								<p class="-mb-[2px]">Delete</p>
+							</a>
+						</div>
 					</div>
+
+					<form
+						id="form"
+						method="post"
+						action="./addProduct.html"
+						class="mt-7 grid grid-cols-5 gap-x-8 text-md font-semibold"
+					>
+						<div
+							class="col-span-3 bg-white px-8 py-6 flex flex-col gap-6 rounded-lg border border-borderPrimary"
+						>
+							<div class="flex flex-col gap-3">
+								<label for="product_name">Product Name</label>
+								<input
+									type="text"
+									id="product_name"
+									name="product_name"
+									placeholder="Input product name"
+									class="px-5 py-2 border-borderPrimary border bg-backgroundPrimary rounded-md"
+								/>
+							</div>
+							<div>
+								<fieldset class="flex flex-col gap-3">
+									<p>Category</p>
+									<div class="flex gap-1">
+										<div>
+											<input
+												type="radio"
+												name="category"
+												id="food"
+												class="hidden peer"
+												value="food"
+											/>
+											<label
+												role="button"
+												for="food"
+												tabindex="0"
+												class="peer-checked:text-white bg-[#D9D9D9] peer-checked:bg-primary px-6 py-2 text-base rounded-s-md"
+											>
+												Food
+											</label>
+										</div>
+										<div>
+											<input
+												type="radio"
+												name="category"
+												id="drink"
+												class="hidden peer"
+												value="drink"
+											/>
+											<label
+												role="button"
+												for="drink"
+												tabindex="0"
+												class="peer-checked:text-white bg-[#D9D9D9] peer-checked:bg-primary px-6 py-2 text-base rounded-e-md"
+											>
+												Drink
+											</label>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+							<div class="flex flex-col gap-3">
+								<label for="price">Price</label>
+								<input
+									type="text"
+									id="price"
+									name="price"
+									placeholder="Input price"
+									class="px-5 py-2 border-borderPrimary border bg-backgroundPrimary rounded-md"
+								/>
+							</div>
+							<div class="flex flex-col gap-3">
+								<label for="stock">Stock</label>
+								<input
+									type="text"
+									id="stock"
+									name="stock"
+									placeholder="Input stock"
+									class="px-5 py-2 border-borderPrimary border bg-backgroundPrimary rounded-md"
+								/>
+							</div>
+						</div>
+						<section
+							class="col-span-2 bg-white py-6 h-fit rounded-lg border border-borderPrimary"
+						>
+							<p class="font-bold text-lg px-8">Product Image</p>
+							<div
+								class="h-[1px] border-b border-b-borderPrimary w-full my-4"
+							></div>
+							<div class="px-4">
+								<label
+									for="image-upload"
+									id="drag-area"
+									class="w-full h-[280px] bg-backgroundPrimary border-2 border-[#D9D9D9] border-dashed rounded-lg overflow-hidden cursor-pointer flex justify-center items-center"
+								>
+									<input
+										id="image-upload"
+										name="image"
+										type="file"
+										hidden
+										accept="image/*"
+									/>
+									<div
+										id="image-viewer"
+										class="w-full h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center items-center"
+									>
+										<img src="../assets/imagePlaceholder.png" alt="" />
+										<p class="text-[18px]">
+											Tarik dan lepas atau
+											<span class="text-primary">pilih gambar</span>
+										</p>
+										<p class="text-base text-black/25">
+											Mendukung JPG, JPEG, dan PNG
+										</p>
+									</div>
+								</label>
+							</div>
+						</section>
+					</form>
 				</main>
 			</div>
 		</main>
+		<script>
+			const form = document.getElementById("form");
+
+			form.addEventListener("submit", (event) => {
+				event.preventDefault(); // Prevent the form from submitting
+
+				const formData = new FormData(form);
+				console.log(formData);
+				// Log form values using console.log()
+				for (const [key, value] of formData.entries()) {
+					if (value instanceof File) {
+						console.log(
+							`${key}: File { name: ${value.name}, size: ${value.size} bytes }`
+						);
+					} else if (value instanceof FileList) {
+						console.log(`${key}:`);
+						for (const file of value) {
+							console.log(
+								`  File { name: ${file.name}, size: ${file.size} bytes }`
+							);
+						}
+					} else {
+						console.log(`${key}: ${value}`);
+					}
+				}
+			});
+		</script>
+		<script src="../js/imageUploader.js"></script>
 	</body>
 </html>

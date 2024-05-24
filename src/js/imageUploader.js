@@ -7,6 +7,7 @@ function uploadImage() {
 	let link = URL.createObjectURL(img.files[0]);
 	imgViewer.style.backgroundImage = `url(${link})`;
 	imgViewer.textContent = "";
+	dragArea.style.border = 0;
 	return;
 }
 
