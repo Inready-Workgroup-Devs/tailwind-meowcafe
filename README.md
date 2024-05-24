@@ -7,6 +7,6 @@
 
 #### How To Use
 
-Clone this repository and run `npm install` to install the node packages.
+Clone this repository and run `npm install` to install node packages.
 
 Run `npm run dev`.
