@@ -27,6 +27,7 @@ module.exports = {
 				warning: "#FEC53D",
 				error: "#FF0000",
 				backgroundPrimary: "#F5F6FA",
+				textPrimary: "#202224",
 				borderPrimary: "#D5D5D5",
 				purple: "#6226EF",
 			},
